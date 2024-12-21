@@ -6,38 +6,66 @@
     <title>Sex8A9.com.vn</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+        .gallery .gallery-item {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
+            height: 100vh;
+            scroll-snap-align: start;
+            background-color: #000;
         }
         .gallery img {
-            width: 100%;
-            height: auto;
+            max-width: 90%;
+            max-height: 90%;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <div class="gallery">
-        <img src="https://i.imgur.com/poNKGCH.jpeg" alt="Image 1">
-        <img src="https://i.imgur.com/dpyubMi.jpeg" alt="Image 2">
-        <img src="https://i.imgur.com/zuUOR9G.jpeg" alt="Image 3">
-        <img src="https://i.imgur.com/42A7w4v.jpeg" alt="Image 4">
-        <img src="https://i.imgur.com/LOq6Bax.jpeg" alt="Image 5">
-        <img src="https://i.imgur.com/nwE6T4I.jpeg" alt="Image 6">
-        <img src="https://i.imgur.com/3HVWx1V.jpeg" alt="Image 7">
-        <img src="https://i.imgur.com/ropV5ZO.jpeg" alt="Image 8">
-        <img src="https://i.imgur.com/plwK7jl.jpeg" alt="Image 9">
+        <div class="gallery-item">
+            <img src="https://i.imgur.com/poNKGCH.jpeg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.imgur.com/dpyubMi.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.imgur.com/zuUOR9G.jpeg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.imgur.com/42A7w4v.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.imgur.com/LOq6Bax.jpeg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.imgur.com/nwE6T4I.jpeg" alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.imgur.com/3HVWx1V.jpeg" alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.imgur.com/ropV5ZO.jpeg" alt="Image 8">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.imgur.com/plwK7jl.jpeg" alt="Image 9">
+        </div>
     </div>
 </body>
 </html>
